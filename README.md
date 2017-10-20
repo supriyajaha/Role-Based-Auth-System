@@ -29,7 +29,7 @@ Note:
 3.	Run the class AuthorizationTest.java from package main
 ---------------------------------------------------------------------------------------------------------------------  
 **Class Diagram:**
-![]({{site.baseurl}}/https://raw.githubusercontent.com/supriyajaha/Role-Based-Auth-System/master/Capture.JPG)
+[[https://raw.githubusercontent.com/supriyajaha/Role-Based-Auth-System/master/Capture.JPG]]
 
 
 
