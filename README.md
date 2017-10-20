@@ -16,4 +16,6 @@ Note:
 2. Code should be maintainable and production ready
 3. Follow the best practices of engineering and design patterns.
 
------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+![Class diagram]({{site.baseurl}}//Capture.JPG)
+
