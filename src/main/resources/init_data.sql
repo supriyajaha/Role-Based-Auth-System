@@ -5,9 +5,8 @@ DROP TABLE IF EXISTS domain_user;
 DROP TABLE IF EXISTS action_type;
 DROP TABLE IF EXISTS role;
 DROP TABLE IF EXISTS resource;
-DROP TABLE IF EXISTS user_role;
+DROP TABLE IF EXISTS user_role_resource;
 DROP TABLE IF EXISTS role_action_type;
-DROP TABLE IF EXISTS resource_role;
 
 CREATE TABLE domain_user(
     user_id    int unsigned NOT NULL auto_increment,
@@ -34,11 +33,11 @@ CREATE TABLE resource(
 );
 
 CREATE TABLE user_role_resource(
-    user_role_id int unsigned NOT NULL auto_increment,
+    user_role_resource_id int unsigned NOT NULL auto_increment,
     user_id     int unsigned,
     role_id    int unsigned,
-    resource_id int Unsigned,
-    PRIMARY  KEY(user_role_id),
+    resource_id int unsigned,
+    PRIMARY  KEY(user_role_resource_id),
     FOREIGN KEY(user_id) REFERENCES domain_user(user_id) ON DELETE CASCADE,
     FOREIGN KEY(role_id) REFERENCES role(role_id) ON DELETE CASCADE,
     FOREIGN KEY(resource_id) REFERENCES resource(resource_id) ON DELETE CASCADE
@@ -66,7 +65,7 @@ INSERT INTO role(role_name)
 VALUES ("admin"),("guest"),("employee_team_a"),("employee_team_b");
 
 INSERT INTO user_role_resource (user_id,role_id,resource_id)
-VALUES (1,1,1),(1,1,2),(2,2,1),(2,2,2),(3,3,1),(3,2,4),(4,2,1),(4,4,4);
+VALUES (1,1,1),(1,1,2),(2,2,1),(2,2,2),(3,3,1),(3,4,2),(4,2,1),(4,4,2);
 
 INSERT INTO role_action_type (role_id,action_type_id)
 VALUES (1,1),(1,2),(1,3),(1,4),(2,1),(3,1),(3,4),(4,1),(4,2);
