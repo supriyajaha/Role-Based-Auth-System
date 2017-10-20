@@ -6,9 +6,9 @@ import javax.persistence.*;
 @Entity
 public class UserResourceRole {
     @Id
-    @Column(name = "user_role_id", nullable = false)
+    @Column(name = "user_role_resource_id", nullable = false)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int user_role_id;
+    private int userRoleResourceId;
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private User user;
@@ -31,12 +31,12 @@ public class UserResourceRole {
         this.resource = resource;
     }
 
-    public int getUser_role_id() {
-        return user_role_id;
+    public int getUserRoleResourceId() {
+        return userRoleResourceId;
     }
 
-    public void setUser_role_id(int user_role_id) {
-        this.user_role_id = user_role_id;
+    public void setUserRoleResourceId(int userRoleResourceId) {
+        this.userRoleResourceId = userRoleResourceId;
     }
 
     public User getUser() {
