@@ -25,7 +25,9 @@ Note:
 **RUN:**
 1.	Change database.properties file under resources and add mysql username and password
 2.	Run init_data.sql from under resources, before starting the project to load all tables in db.
-    Type source file_path_of_init_data in sql commandLine
+    Type 
+    source file_path_of_init_data 
+    in sql commandLine
 3.	Run the class AuthorizationTest.java from package main
 ---------------------------------------------------------------------------------------------------------------------  
 ![](https://github.com/supriyajaha/Role-Based-Auth-System/blob/master/Capture.JPG)
