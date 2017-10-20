@@ -28,7 +28,6 @@ Note:
     Type _source <filePath>_ of init_data.sql in sql commandLine
 3.	Run the class AuthorizationTest.java from package main
 ---------------------------------------------------------------------------------------------------------------------  
-**Class Diagram:**
 ![](https://github.com/supriyajaha/Role-Based-Auth-System/blob/master/Capture.JPG)
 
 
