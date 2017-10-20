@@ -58,9 +58,9 @@ public class AuthorizationTest {
             validate(username,resource,actionType);
             authorizationResponse = authorizationService.isAuthorized(username, resource, actionType);
         }catch (ValidationException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }catch (Exception ex){
-            System.err.println("Exception occurred during checking authorization, please try again");
+            System.out.println("Exception occurred during checking authorization, please try again");
         }
         return authorizationResponse;
     }
